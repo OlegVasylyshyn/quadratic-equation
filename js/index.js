@@ -20,15 +20,15 @@ function quadraticEquation(a, b, c){
     if(d > 0){
         var n1 = Math.sqrt(d);
         var n2 = -b + n1;
-        var x1 = n2 / (2*a);
+        var x1 = n2 / 2*a;
     
         n2 = -b - n1;
-        var x2 = n2 / (2*a);
+        var x2 = n2 / 2*a;
     
         return { x1: x1, x2: x2};
     } else if(d === 0){
         // in this case we have one result
-        return - (b / (2 * a));
+        return - (b / 2 * a);
     } else {
         n1 = Math.sqrt(Math.abs(-(b * b) + 4 * a * c));
         x1 = (-b + n1) / 2*a;
